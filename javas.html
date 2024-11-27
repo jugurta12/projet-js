@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banderole Dégradée</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <h1>Gestion de Listes de Tâches</h1>
+
+  <h2>Ajouter une nouvelle liste</h2>
+  <form id="addListForm">
+    <input type="text" id="listName" placeholder="Nom de la liste" required>
+    <button type="submit">Ajouter la liste</button>
+  </form>
+
+  <h2>Mes Listes</h2>
+  <div id="listsContainer"></div>
+
+  <h2>Import/Export CSV</h2>
+  <input type="file" id="importCSV" accept=".csv">
+  <button onclick="exportToCSV()">Exporter en CSV</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
+</body>
+</html>
+

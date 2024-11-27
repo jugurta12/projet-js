@@ -1,0 +1,167 @@
+.list {
+  margin: 10px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+.task.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-10);}
+  to { opacity: 1; transform: translate(0);}
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #00b4d8, #00b4d8);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #004d73;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #005b8c;
+  margin: 20px 0 10px;
+}
+
+form#addListForm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#addListForm input[type="text"] {
+  padding: 10px;
+  border: 2px solid #005b8c;
+  border-radius: 4px;
+  width: 200px;
+}
+
+#addListForm button {
+  padding: 10px 15px;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addListForm button:hover {
+  background-color: #005f85;
+}
+
+#listsContainer {
+  width: 100%;
+  max-width: 600px;
+}
+
+.list {
+  background-color: #e3f2fd;
+  border: 2px solid #00b4d8;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.list h3 {
+  margin: 0;
+  color: #004d73;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #d32f2f;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.list button:hover {
+  background-color: #b71c1c;
+}
+
+.task {
+  background-color: #f1f8ff;
+  border: 1px solid #90caf9;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.task.completed {
+  background-color: #c8e6c9;
+  text-decoration: line-through;
+  color: #388e3c;
+}
+
+.task button {
+  padding: 5px;
+  font-size: 0.9em;
+  margin-left: 5px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background-color: #1565c0;
+}
+
+form {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+form input {
+  padding: 8px;
+  border: 1px solid #00b4d8;
+  border-radius: 4px;
+  width: 100%;
+}
+
+form button {
+  padding: 8px;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005f85;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
